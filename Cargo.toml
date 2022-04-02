@@ -1,0 +1,11 @@
+[package]
+name = "libpassgen"
+version = "0.1.0"
+license = "MIT"
+description = "Library for generating passwords"
+authors = ["Fabrice Corraire <antidote1911@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+rand = "0.7"
+indexmap = "1.6"
