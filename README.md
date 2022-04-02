@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Cargo Build & Test](https://github.com/Antidote1911/libpassgen/actions/workflows/ci.yml/badge.svg)](https://github.com/Antidote1911/libpassgen/actions/workflows/ci.yml)
+
 # libpassgen
 
 Crate to generate pseudo-random passwords.  
