@@ -70,7 +70,7 @@ impl Pool {
     ///
     /// # Examples
     /// ```
-    /// # use passgen_core::Pool;
+    /// # use libpassgen::Pool;
     /// let pool: Pool = "0123456789".parse().unwrap();
     ///
     /// assert_eq!(pool.len(), 10)
@@ -90,7 +90,7 @@ impl Pool {
     ///
     /// # Examples
     /// ```
-    /// # use passgen_core::Pool;
+    /// # use libpassgen::Pool;
     /// let pool = Pool::new();
     ///
     /// assert!(pool.is_empty())
@@ -108,7 +108,7 @@ impl Pool {
     ///
     /// # Examples
     /// ```
-    /// # use passgen_core::Pool;
+    /// # use libpassgen::Pool;
     /// let pool: Pool = "ABCDEFG".parse().unwrap();
     ///
     /// assert!(pool.contains('D'))
@@ -121,7 +121,7 @@ impl Pool {
     ///
     /// # Examples
     /// ```
-    /// # use passgen_core::Pool;
+    /// # use libpassgen::Pool;
     /// let pool: Pool = "ABCDEFG".parse().unwrap();
     ///
     /// assert!(pool.contains_all("DAG"))
@@ -164,7 +164,7 @@ impl Pool {
     ///
     /// # Examples
     /// ```
-    /// # use passgen_core::Pool;
+    /// # use libpassgen::Pool;
     /// # use std::str::FromStr;
     /// let mut pool = Pool::from_str("31524").unwrap();
     /// pool.sort();
@@ -180,7 +180,7 @@ impl Pool {
 ///
 /// # Examples
 /// ```
-/// # use passgen_core::{Pool, generate_password};
+/// # use libpassgen::{Pool, generate_password};
 /// let pool = "0123456789".parse().unwrap();
 /// let password = generate_password(&pool, 15);
 ///
@@ -206,7 +206,7 @@ pub fn generate_password(pool: &Pool, length: usize) -> String {
 ///
 /// # Examples
 /// ```
-/// # use passgen_core::{Pool, generate_n_passwords};
+/// # use libpassgen::{Pool, generate_n_passwords};
 /// let pool = "0123456789".parse().unwrap();
 /// let vec_passwords = generate_n_passwords(&pool, 15,5);
 ///
@@ -230,7 +230,7 @@ pub fn generate_n_passwords(pool: &Pool, length: usize, count: usize) -> Vec<Str
 ///
 /// # Examples
 /// ```
-/// # use passgen_core::calculate_entropy;
+/// # use libpassgen::calculate_entropy;
 ///
 /// assert_eq!(calculate_entropy(12, 64), 72_f64);
 /// ```
@@ -242,7 +242,7 @@ pub fn calculate_entropy(length: usize, pool_size: usize) -> f64 {
 ///
 /// # Examples
 /// ```
-/// # use passgen_core::calculate_length;
+/// # use libpassgen::calculate_length;
 ///
 /// assert_eq!(calculate_length(128_f64, 64_f64), 22_f64);
 /// ```
