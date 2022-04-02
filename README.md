@@ -1,7 +1,7 @@
 # libpassgen
 
 Crate to generate pseudo-random passwords.  
-This is the [passgen](https://github.com/Antidote1911/passgen) core. A cli app to generate passwords.
+This is the [Passgen](https://github.com/Antidote1911/passgen) core. A cli app to generate passwords.
 
 ## USAGE
 
@@ -30,4 +30,4 @@ for n in 0..vec_passwords.len() {
 }
 ```
 
-Have a look to [passgen](https://github.com/Antidote1911/passgen) cli app for full example.
+Have a look to [Passgen](https://github.com/Antidote1911/passgen) cli app for full example.
