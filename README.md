@@ -31,6 +31,7 @@ let mut pool = Pool::from_str("1234567").unwrap();
 let vec_passwords = generate_n_passwords(&pool, 15, 100);
 for n in 0..vec_passwords.len() {
     println!("{}",vec_passwords[n]);
+	}
 }
 ```
 
