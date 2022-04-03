@@ -1,3 +1,8 @@
+//! # libpassgen
+//!
+//! `libpassgen` crate for generating randoms passwords
+
+
 use indexmap::set::Iter;
 use indexmap::IndexSet;
 use rand::Rng;
