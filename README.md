@@ -1,6 +1,9 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Cargo Build & Test](https://github.com/Antidote1911/libpassgen/actions/workflows/ci.yml/badge.svg)](https://github.com/Antidote1911/libpassgen/actions/workflows/ci.yml)
-
+[![Crates.io](https://img.shields.io/crates/v/libpassgen?style=flat-square)](https://crates.io/crates/libpassgen)
+[![Crates.io](https://img.shields.io/crates/d/libpassgen?style=flat-square)](https://crates.io/crates/libpassgen)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](https://github.com/Antidote1911/libpassgen/blob/master/LICENSE-MIT)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)](https://github.com/Antidote1911/libpassgen/blob/master/LICENSE-APACHE)
+[![made-with-rust](https://img.shields.io/badge/Made%20with-Rust-1f425f.svg)](https://www.rust-lang.org/)
+[![Build Status](https://img.shields.io/github/workflow/status/Antidote1911/libpassgen/Cargo%20Build%20&%20Test?style=flat-square)](https://github.com/Antidote1911/libpassgen/actions/workflows/ci.yml?query=branch%3Amaster)
 # libpassgen
 
 Crate to generate pseudo-random passwords.  
