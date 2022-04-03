@@ -2,7 +2,6 @@
 //!
 //! `libpassgen` crate for generating randoms passwords
 
-
 use indexmap::set::Iter;
 use indexmap::IndexSet;
 use rand::Rng;
@@ -31,7 +30,7 @@ impl DerefMut for Pool {
 }
 
 impl FromIterator<char> for Pool {
-    fn from_iter<I: IntoIterator<Item=char>>(iter: I) -> Self {
+    fn from_iter<I: IntoIterator<Item = char>>(iter: I) -> Self {
         let mut pool = Pool::new();
         pool.0 = IndexSet::from_iter(iter);
 
@@ -40,7 +39,7 @@ impl FromIterator<char> for Pool {
 }
 
 impl Extend<char> for Pool {
-    fn extend<T: IntoIterator<Item=char>>(&mut self, iter: T) {
+    fn extend<T: IntoIterator<Item = char>>(&mut self, iter: T) {
         self.0.extend(iter)
     }
 }
@@ -225,9 +224,9 @@ pub fn generate_n_passwords(pool: &Pool, length: usize, count: usize) -> Vec<Str
 
     let mut vec: Vec<String> = Vec::new();
     for n in 0..count {
-        let pass = generate_password(&pool, length);
+        let pass = generate_password(pool, length);
         vec.insert(n, pass.clone());
-    };
+    }
     vec
 }
 
