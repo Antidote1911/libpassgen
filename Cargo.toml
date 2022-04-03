@@ -1,6 +1,6 @@
 [package]
 name = "libpassgen"
-version = "1.0.0"
+version = "1.0.1"
 license = "MIT"
 description = "Library for generating passwords"
 authors = ["Fabrice Corraire <antidote1911@gmail.com>"]
