@@ -1,10 +1,10 @@
 [package]
 name = "libpassgen"
-version = "0.1.0"
+version = "1.0.0"
 license = "MIT"
 description = "Library for generating passwords"
 authors = ["Fabrice Corraire <antidote1911@gmail.com>"]
-keywords = ["random", "password", "password generator", "generator"]
+keywords = ["random", "password", "generator"]
 homepage = "https://github.com/Antidote1911/libpassgen"
 repository = "https://github.com/Antidote1911/libpassgen"
 edition = "2021"
