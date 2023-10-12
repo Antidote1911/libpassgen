@@ -200,7 +200,7 @@ pub fn generate_password(pool: &Pool, length: usize) -> String {
 
     (0..length)
         .map(|_| {
-            let idx = rng.gen_range(0, pool.len());
+            let idx = rng.gen_range(0.. pool.len());
             *pool.get(idx).unwrap()
         })
         .collect()
