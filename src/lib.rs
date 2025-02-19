@@ -196,11 +196,11 @@ impl Pool {
 pub fn generate_password(pool: &Pool, length: usize) -> String {
     assert!(!pool.is_empty(), "Pool contains no elements!");
 
-    let mut rng = rand::thread_rng();
+    let mut rng = rand::rng();
 
     (0..length)
         .map(|_| {
-            let idx = rng.gen_range(0.. pool.len());
+            let idx = rng.random_range(0.. pool.len());
             *pool.get(idx).unwrap()
         })
         .collect()
