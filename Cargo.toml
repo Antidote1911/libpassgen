@@ -11,4 +11,7 @@ edition = "2021"
 
 [dependencies]
 rand = "0.9.0"
+rand_seeder = "0.4.0"
+rand_isaac = "0.4.0"
+rand_hc = "0.4.0"
 indexmap = "2.7.1"

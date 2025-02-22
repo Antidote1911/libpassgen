@@ -4,7 +4,9 @@
 
 use indexmap::set::Iter;
 use indexmap::IndexSet;
-use rand::Rng;
+use rand::{Rng, SeedableRng};
+use rand_hc::Hc128Rng;
+use rand_isaac::Isaac64Rng;
 use std::char::ParseCharError;
 use std::fmt;
 use std::iter::FromIterator;
@@ -196,7 +198,8 @@ impl Pool {
 pub fn generate_password(pool: &Pool, length: usize) -> String {
     assert!(!pool.is_empty(), "Pool contains no elements!");
 
-    let mut rng = rand::rng();
+    let mut isaac_seeder = Isaac64Rng::from_os_rng();
+    let mut rng = Hc128Rng::from_rng(&mut isaac_seeder);
 
     (0..length)
         .map(|_| {
